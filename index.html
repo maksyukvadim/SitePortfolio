@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js" 
+    integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" 
+    crossorigin="anonymous"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/google-embedded.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Site</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container" id="header">
+            <div class="row">
+                <div class="col-md-3 logo">
+                    <div class="circle backGreen">
+                    </div>
+                    <span>he</span>
+                    <span>xagon</span>
+                </div>
+                <div class="col-md-8 ">
+                    <ul class="top-menu">
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#aboutUs">about us</a></li>
+                        <li><a href="#blockPortfolio">portfolio</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contactUs">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 center-text">
+                    <span class="maint-text-head">We believe in power of effective branding and packging</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 center-text">
+                    <span class="caption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation consequat</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <button type="button" class="btn btn-default center-block" id="FirstBtn">get my free quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="Introducing">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 center-text">
+                <span>Introducing the flexible and more effective way to promote your business</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <img src="img/GreenLine.png" alt="Line" class="headingLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 center-text">
+                <span class="caption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation consequat</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <button type="button" class="btn btn-default center-block" id="getTouched">get touched</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid backGray">
+        <div class="container" id="aboutUs">
+            <div class="col-md-3">
+                <span class="topicText">About Us</span>
+                <img src="img/WhiteLine.png" alt="" class="headingLine">
+            </div>
+            <div class="col-md-8 col-md-offset-1 aboutUsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritator in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritat</div>
+        </div>
+    </div>
+    <div class="container" id="blockPortfolio">
+        <div class="row">
+            <div class="col-md-3">
+                <span class="topicText">Portfolio</span>
+                <img src="img/BlackLine.jpg" alt="line" class="headingLine">
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <ul class="menu-portfolio">
+                    <li class="t1 tab-current">Web design</li>
+                    <li class="t2">Mobile app</li>
+                    <li class="t3">Print design</li>
+                    <li class="t4">Ecommerce</li>
+                    <li class="t5">Others</li>
+                    <li id="activeBlock"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="t1">
+            <div class="row">
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="t2">
+            <div class="row">
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="t3">
+            <div class="row">
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="t4">
+            <div class="row">
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="t5">
+            <div class="row">
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 item-image ">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="icon-links">
+                            </p>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="recommendation">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <span>What our customer says</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-12" id="emptyPlace">
+
+                            </div>
+                        </div>
+                        <div class="row backGreen">
+                            <div class="container">
+                                <div class="col-md-1 col-md-offset-3">
+                                    <div class="circle" id="avatar">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-md-offset-1 comment">
+                                    <span>Nikita doe</span><span>Designer. Axl Consultant</span> <br>
+                                    <span> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12" id="emptyPlace">
+
+                            </div>
+                        </div>
+                        <div class="row backGreen">
+                            <div class="container">
+                                <div class="col-md-1 col-md-offset-3">
+                                    <div class="circle" id="avatar">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-md-offset-1 comment">
+                                    <span>Nikita doe</span><span>Designer. Axl Consultant</span> <br>
+                                    <span> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam "</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12" id="emptyPlace">
+
+                            </div>
+                        </div>
+                        <div class="row backGreen">
+                            <div class="container">
+                                <div class="col-md-1 col-md-offset-3">
+                                    <div class="circle" id="avatar">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-md-offset-1 comment">
+                                    <span>Nikita doe</span><span>Designer. Axl Consultant</span> <br>
+                                    <span> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam "</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="ourTeam">
+        <div class="row">
+            <div class="col-md-3">
+                <span class="topicText">Our team</span>
+                <img src="img/BlackLine.jpg" alt="line" class="headingLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 blockEmployees">
+                <div class="imgEmployees effect-zoe">
+                    <img src="img/employees.jpg" alt="">
+                    <div class="center-text blockEmployeesFooter">
+                        <span class="">Allex Doe</span>
+                        <span class="center-block">Senior Designer</span>
+                    </div>
+                    <p class="description">
+                        <a href="https://www.facebook.com/" class="icon-facebook-squared"></a>
+                        <a href="https://twitter.com/" class="icon-twitter-squared"></a>
+                        <a href="https://plus.google.com/" class="icon-gplus-squared"></a>
+                    </p>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-3 blockEmployees">
+                <div class="imgEmployees effect-zoe">
+                    <img src="img/employees.jpg" alt="">
+                    <div class=" center-text blockEmployeesFooter">
+                        <span>Nicolas fin</span>
+                        <span class="center-block">Senior Designer</span>
+                    </div>
+                    <p class="description">
+                        <a href="https://www.facebook.com/" class="icon-facebook-squared"></a>
+                        <a href="https://twitter.com/" class="icon-twitter-squared"></a>
+                        <a href="https://plus.google.com/" class="icon-gplus-squared"></a>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="col-md-3 blockEmployees">
+                <div class="imgEmployees effect-zoe">
+                    <img src="img/employees.jpg" alt="">
+                    <div class=" center-text blockEmployeesFooter">
+                        <span>Allice maria</span>
+                        <span class="center-block">Copyrighter</span>
+                    </div>
+                    <p class="description">
+                        <a href="https://www.facebook.com/" class="icon-facebook-squared"></a>
+                        <a href="https://twitter.com/" class="icon-twitter-squared"></a>
+                        <a href="https://plus.google.com/" class="icon-gplus-squared"></a>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="col-md-3 blockEmployees">
+                <div class="imgEmployees effect-zoe">
+                    <img src="img/employees.jpg" alt="">
+                    <div class=" center-text blockEmployeesFooter">
+                        <span>Laura shippon</span>
+                        <span class="center-block">Seo consultant</span>
+                    </div>
+                    <p class="description">
+                        <a href="https://www.facebook.com/" class="icon-facebook-squared"></a>
+                        <a href="https://twitter.com/" class="icon-twitter-squared"></a>
+                        <a href="https://plus.google.com/" class="icon-gplus-squared"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid backImgIntroduc" id="introduc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center-text ">
+                    <span class="textIntroduc">Introducing the flexible and more effective way to promote your business</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <button type="button" class="btn btn-default center-block" id="btmContactUs">contact us</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="row">
+            <div class="col-md-3">
+                <span class="topicText">Our services</span>
+                <img src="img/BlackLine.jpg" alt="line" class="headingLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/monitor.jpg" alt="monitor" width="20%">
+                <span class="headingServices">Web design</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi 
+                  cing elit, sed do eiusmod tempor incididunt ut labore 
+                  et dolore magn</span>
+            </div>
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/tool.jpg" alt="" width="20%">
+                <span class="headingServices">Print design</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi cing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magn</span>
+            </div>
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/web.jpg" alt="" width="20%">
+                <span class="headingServices">Web development</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi cing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magn</span>
+            </div>
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/social-media.jpg" alt="" width="20%">
+                <span class="headingServices">Wordpress</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi cing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magn</span>
+            </div>
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/social-media(1).jpg" alt="" width="20%">
+                <span class="headingServices">Joomla</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi cing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magn</span>
+            </div>
+            <div class="col-md-4 center-text center-block servicesItem">
+                <img src="img/app.jpg" alt="" width="20%">
+                <span class="headingServices">App design</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adip isi cing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magn</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid backgrounLorem" id="loremIpsum">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod 
+                      tempor incididunt ut l
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contactUs">
+        <div class="row">
+            <div class="col-md-3">
+                <span class="topicText">Contact us</span>
+                <img src="img/BlackLine.jpg" alt="line" class="headingLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="bclockContact">
+                <ul>
+                    <li>Get in touch</li>
+                    <li>ABC street, 123/7,NY </li>
+                    <li>120003-USA</li>
+                    <li>mail@url.com</li>
+                    <li>+023 586 26253</li>
+                    <li>Get in touch social network -
+                        <span><a href="https://www.facebook.com/" class="icon-facebook"></a></span>
+                        <span><a href="https://twitter.com/" class="icon-twitter"></a></span>
+                        <span><a href="https://ru.pinterest.com/" class="icon-pinterest"></a></span>
+                        <span><a href="https://dribbble.com/" class="icon-dribbble"></a></span>
+                        <span><a href="https://plus.google.com/" class="icon-gplus"></a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6" id="form">
+                <form action="/">
+                    <input type="text" name="name" placeholder="Your name" class="input-trans">
+                    <input type="text" name="e-mail" placeholder="Email" class="input-trans">
+                    <input type="text" name="text" placeholder="Your text here" class="input-trans">
+                    <button type="button" class="btn btn-default" id="sendFormBtn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid backFooter" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span>Copyright 2016  |  All right reserved</span>
+                </div>
+                <div class="col-md-1 col-md-offset-7">
+                    <a href="/"><span class="glyphicon glyphicon-menu-up" id="icoUp"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
