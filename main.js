@@ -54,13 +54,12 @@ $(document).ready(function () {
         var targetFix = blockTargetLeft;
 
         if (target.hasClass('t5')) {
-            $('#activeBlock').css({ 'width': '15%' });
-            targetFix += 18;
-            drag = 10;
+            $('#activeBlock').css({ 'width': '18%' });
+            
+         
         } else {
-            $('#activeBlock').css({ 'width': '20%' });
-            targetFix += 15;
-            drag = -10;
+            $('#activeBlock').css({ 'width': '18%' });
+            
         }
 
         if (targetOffsetLeft > blockTargetLeft) {
