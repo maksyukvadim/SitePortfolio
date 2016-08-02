@@ -77,6 +77,14 @@ $(document).ready(function () {
             target.addClass('tab-current');
         }), 100);
     }
+
+    $('#bs-example-navbar-collapse-1 a' ).click(function(){
+            $('#btnMenu').trigger('click');
+            
+           
+    });
+
+    $('#carousel-example-generic').carousel({interval: 507700});
 });
 
 
