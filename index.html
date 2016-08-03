@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="jquery.mixitup.min.js"></script>
     <link rel="stylesheet" href="css/google-embedded.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="main.js"></script>
@@ -103,7 +104,7 @@
     </div>
     <div class="container-fluid backGray">
         <div class="container" id="aboutUs">
-            <div class="col-md-3 col-sm-3 col-xs-12 center-text">
+            <div class="col-md-3 col-sm-3 col-xs-12">
                 <span class="topicText">About Us</span>
                 
                 <img src="img/WhiteLine.png" alt="" class="headingLine" >
@@ -126,19 +127,21 @@
                 <img src="img/BlackLine.jpg" alt="line" class="headingLine lineFixSm ">
             </div>
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-1 col-xs-12 ">
+                <nav>
                 <ul class="menu-portfolio">
-                    <li class="t1 tab-current">Web design</li>
-                    <li class="t2">Mobile app</li>
-                    <li class="t3">Print design</li>
-                    <li class="t4">Ecommerce</li>
-                    <li class="t5">Others</li>
+                    <li class="filter active" data-filter=".web"><span >Web design</span></li>
+                    <li class="filter" data-filter=".app"><span>Mobile app</span></li>
+                    <li class="filter" data-filter=".print"><span>Print design</span></li>
+                    <li class="filter" data-filter=".ecommerce"><span>Ecommerce</span></li>
+                    <li class="filter" data-filter=".other"><span>Others</span></li>
                     <li id="activeBlock"></li>
                 </ul>
+                </nav>
             </div>
         </div>
-        <div class="t1">
+        <div id="portfoliolist">
             <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image web" data-cat="web">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -149,7 +152,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image app" data-cat="app">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -160,29 +163,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image web" data-cat="web">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -191,7 +172,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image print" data-cat="print">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -202,7 +183,16 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image app" data-cat="app">
+                    <figure class="effect-zoe ">
+                        <img src="img/item.jpg" alt="">
+                        <figcaption class="center-text">
+                            <h2 class="">Click here for details</h2>
+                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image ecommerce" data-cat="ecommerce">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -213,7 +203,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image other" data-cat="other">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -224,11 +214,7 @@
                         </figcaption>
                     </figure>
                 </div>
-            </div>
-        </div>
-        <div class="t2">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image web" data-cat="web">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -239,7 +225,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image print" data-cat="print">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -250,18 +236,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image ecommerce" data-cat="ecommerce">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -272,16 +247,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image other" data-cat="other">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -292,7 +258,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image print" data-cat="print">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -303,7 +269,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image ecommerce" data-cat="ecommerce">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -314,11 +280,7 @@
                         </figcaption>
                     </figure>
                 </div>
-            </div>
-        </div>
-        <div class="t3">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image app" data-cat="app">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -329,7 +291,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image web" data-cat="web">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -340,18 +302,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image other" data-cat="other">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -362,16 +313,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image app" data-cat="app">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -382,7 +324,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image print" data-cat="print">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -393,7 +335,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image web" data-cat="web">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -404,176 +346,7 @@
                         </figcaption>
                     </figure>
                 </div>
-            </div>
-        </div>
-        <div class="t4">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="t5">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
-
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image">
-                    <figure class="effect-zoe ">
-                        <img src="img/item.jpg" alt="">
-                        <figcaption class="center-text">
-                            <h2 class="">Click here for details</h2>
-                            <p class="icon-links">
-                            </p>
-                            <p class="description"><i class="glyphicon glyphicon-plus"></i></p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12 item-image ">
+                <div class="col-md-3 col-sm-4 col-xs-12 item-image app" data-cat="app">
                     <figure class="effect-zoe ">
                         <img src="img/item.jpg" alt="">
                         <figcaption class="center-text">
@@ -598,14 +371,13 @@
     <div class="container-fluid">
         <div class="row">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
+
                 <div class="carousel-inner" role="listbox">
                     <div class="backCarousel"></div>
                     <div class="item active">
@@ -692,7 +464,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
                 <span class="topicText">Our team</span>
-                <img src="img/BlackLine.jpg" alt="line" class="headingLine lineFixSm">
+                <img src="img/BlackLine.jpg" alt="line" class="headingLine">
             </div>
         </div>
         <div class="row">
@@ -871,6 +643,7 @@
             </div>
         </div>
     </div>
+    <footer>
     <div class="container-fluid backFooter" id="footer">
         <div class="container">
             <div class="row">
@@ -883,6 +656,7 @@
             </div>
         </div>
     </div>
+    </footer>
 
 </body>
 

@@ -16,23 +16,7 @@ $(document).ready(function () {
     });
 
     $('ul.menu-portfolio li').click(function () {
-        var thisClass = this.className.slice(0, 2);
-        $('#recommendation').css({ 'margin-top': '60%' });
-        $('div.t1').hide();
-        $('div.t2').hide();
-        $('div.t3').hide();
-        $('div.t4').hide();
-        $('div.t5').hide();
-        $('div.' + thisClass).animate({
-            opacity: 'toggle',
-            height: 'toggle'
-        }, {
-                duration: 500,
-                specialEasing: {
-                    opacity: 'swing',
-                    height: 'swing'
-                },
-            });
+        
 
         setTimeout((function () {
             $('#recommendation').css({ 'margin-top': '10%' });
@@ -52,16 +36,6 @@ $(document).ready(function () {
         var position = 0;
         var drag = 0;
         var targetFix = blockTargetLeft;
-
-        if (target.hasClass('t5')) {
-            $('#activeBlock').css({ 'width': '18%' });
-            
-         
-        } else {
-            $('#activeBlock').css({ 'width': '18%' });
-            
-        }
-
         if (targetOffsetLeft > blockTargetLeft) {
             var position = targetOffsetLeft - targetFix;
         } else {
@@ -72,19 +46,41 @@ $(document).ready(function () {
             left: position,
         }, 200);
 
-        setTimeout((function () {
-            $('ul.menu-portfolio li').removeClass('tab-current');
-            target.addClass('tab-current');
-        }), 100);
     }
 
     $('#bs-example-navbar-collapse-1 a' ).click(function(){
-            $('#btnMenu').trigger('click');
-            
-           
+            $('#btnMenu').trigger('click'); 
     });
 
-    $('#carousel-example-generic').carousel({interval: 507700});
+    $('#carousel-example-generic').carousel({interval: 5000});
+
+
+
+    $(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.item-image',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.web'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
 });
 
 

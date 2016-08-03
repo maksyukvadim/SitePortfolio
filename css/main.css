@@ -89,6 +89,13 @@ img {
     height: 70%;
     margin-top: 90px;
     background: #00bd9b;
+.item-image {
+    position: relative;
+    margin-top: 30px; 
+    bottom: 0;
+	display:none;
+	float:left;
+	overflow:hidden;
 }
 
 .circle {
