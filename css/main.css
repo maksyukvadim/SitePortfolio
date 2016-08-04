@@ -9,6 +9,13 @@ body {
      font-family: 'Open Sans', sans-serif;
 }
 
+
+.blockBtn {
+    position: relative;
+}
+#header {
+
+}
 img {
     vertical-align: bottom;
 }
@@ -25,7 +32,7 @@ img {
     background: #55514c;
     font-weight: lighter;
     font-size: 40px;
-    color: #dadad9;
+    color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -215,8 +222,8 @@ figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
     margin-bottom: -1px;
-	padding: 1.3em;
-	height: 4.35em;
+	padding: 1em;
+	height: 3.4em;
 	background: #00bd9b;
 	color: #ffffff;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -393,7 +400,13 @@ div.effect-zoe:hover p.description {
 .caption-text {
     font-family: 'Open Sans', serif;
     font-size: 13px;
-    color: #a9a9a9;
+    color: #bebebe;
+}
+
+.blockBtn {
+height: auto;
+
+
 }
 
 #FirstBtn {
@@ -406,10 +419,10 @@ div.effect-zoe:hover p.description {
     text-transform: uppercase;
     border: none !important;
     border-radius: 10px;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
 }
 
-#header .row:nth-child(1){
+/*#header .row:nth-child(1){
     margin-top: 6%;
 }
 
@@ -423,7 +436,7 @@ div.effect-zoe:hover p.description {
 
 #header .row:nth-child(4){
     margin-top: 7%;
-}
+}*/
 
 #getTouched {
     width: 200px;
@@ -441,6 +454,7 @@ div.effect-zoe:hover p.description {
 #Introducing .row:nth-child(1){
     font-size: 25px;
     margin-top: 100px;
+    color: #484848;
 }
 
 #Introducing .row:nth-child(2){
@@ -459,6 +473,8 @@ div.effect-zoe:hover p.description {
 .topicText {
     font-family: 'Bitter', serif;
     font-size: 33px;
+    font-weight: bold;
+    color: #494949;
 }
 
 #aboutUs span {
@@ -474,8 +490,8 @@ div.effect-zoe:hover p.description {
 }
 
 .headingLine {
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 .aboutUsText {
@@ -483,7 +499,7 @@ div.effect-zoe:hover p.description {
     padding-left: 0;
     padding-bottom: 8%;
     font-size: 12px;
-    color: #e6e5e5;
+    color: #ffffff;
     font-weight: normal;
     font-style: normal;
     line-height: 1.7em;
@@ -491,10 +507,6 @@ div.effect-zoe:hover p.description {
 
 .lineFixSm {
     width: 60%;
-}
-
-#blockPortfolio span {
-    color: #494949;
 }
 
 #blockPortfolio {
@@ -604,19 +616,21 @@ div.effect-zoe:hover p.description {
 .blockEmployeesFooter span:last-child {
     font-weight: 400;
     font-size: 16px;
-    color: #b8e6da;
+    padding-bottom:10px;
 }
 
 .blockEmployeesFooter span:first-child { 
     font-weight: 500;
     font-size: 18px;
-    color: #ffffff;
+   
 }
 
 .blockEmployeesFooter {
     position: absolute;
     bottom: 0;
     width: 100%;   
+    padding-top: 10px;
+    color: #ffffff;
     background: #00bd9b; 
 }
 
@@ -709,14 +723,18 @@ div.effect-zoe:hover p.description {
     padding-top: 50px;
 }
 
+#ourTeam .headingLine {
+   display: block;
+}
+
 /*max-width: 992px*/
 
 @media (max-width: 992px) {  
 
 
-#header .row:nth-child(4){
+/*#header .row:nth-child(4){
     margin-top: 15%;
-}
+}*/
 
 #Introducing {
     margin-top: 15em;
@@ -755,13 +773,15 @@ div.effect-zoe:hover p.description {
 #bs-example-navbar-collapse-1 {
     position: absolute;
     width: 90%;
-    background: linear-gradient(to top, #000000, #00bd9b);
-    
+    /*background: linear-gradient(to top, #000000, #00bd9b);*/
+    right: 0;
     z-index: 10;
 }
+
 .top-menu {
     position: relative;
     top:0;
+    display: none;
 }
 
 .navbar-default .navbar-collapse, 
@@ -782,21 +802,21 @@ div.effect-zoe:hover p.description {
     font-size: 10px;
 }
 
-#FirstBtn { 
+/*#FirstBtn { 
     margin-top: 15%;
-}
+}*/
 
-#header > .row div:nth-child(3){
+/*#header > .row div:nth-child(3){
     margin-top: 50%;
 }
 
 #header .row div:nth-child(4){
     margin-top: 7%;
-}
+}*/
 
-#header .row:nth-child(5){
+/*#header .row:nth-child(5){
     margin-top: 15%;
-}
+}*/
 
 #Introducing {
     margin-top: 10em;
@@ -838,10 +858,6 @@ div.effect-zoe:hover p.description {
     padding-top: 25px;
 }
 
-#ourTeam .lineFixSm {
-   display: none;
-}
-
 .textIntroduc {
     font-size: 25px;
 }
@@ -874,7 +890,6 @@ div.effect-zoe:hover p.description {
     font-size: 20px;
 }
 
-
 #contactUs .headingLine {
     width: 20%;
     margin-top: 5%;
@@ -886,7 +901,7 @@ div.effect-zoe:hover p.description {
 
 figure.effect-zoe figcaption {
     margin-bottom: -2px;
-	height: 4.75em;
+	height: 3.75em;
 }
 
 #aboutUs .headingLine {
@@ -921,58 +936,55 @@ figure.effect-zoe figcaption {
 @media (max-width: 992px) and (max-height: 700px) {  
 
 
-#header .row:nth-child(2){
+/*#header .row:nth-child(2){
     margin-top: 10%;
 }
 
 #header .row:nth-child(3){
     margin-top: 15%;
-}
-#FirstBtn {
+}*/
+/*#FirstBtn {
     margin-top: 15%;
-}
+}*/
 
 }
 @media (max-width: 767px) and (max-height: 700px) { 
 
 
-#header .row:nth-child(2){
+/*#header .row:nth-child(2){
     margin-top: 10%;
 }
 
 #header .row:nth-child(3){
     margin-top: 5%;
-}
+}*/
 
-#FirstBtn {
+/*#FirstBtn {
     margin-top: 15%;
-}
+}*/
 
 }
 
 @media (min-width: 1440px)  {  
 
-#header .row:nth-child(1){
+/*#header .row:nth-child(1){
     margin-top: 10%;
 }
 
 #header .row:nth-child(2){
     margin-top: 10%;
-}
+}*/
 
-#FirstBtn {
+/*#FirstBtn {
     margin-top: 12%;
-}
+}*/
 
-#Introducing {
-    margin-top: 10% !important;
-}
 
 }
 
 @media (min-width: 1440px) and (max-height: 900px) {  
 
-#header .row:nth-child(1){
+/*#header .row:nth-child(1){
     margin-top: 10%;
 }
 
@@ -982,12 +994,12 @@ figure.effect-zoe figcaption {
 
 #header .row:nth-child(3){
     margin-top: 15%;
-}
+}*/
 
 
-#FirstBtn {
+/*#FirstBtn {
     margin-top: 15%;
-}
+}*/
 
 #Introducing {
     margin-top: 10%;
@@ -997,17 +1009,17 @@ figure.effect-zoe figcaption {
 
 @media (min-width: 992px) and (min-height: 1020px) {  
 
-#header .row:nth-child(1){
+/*#header .row:nth-child(1){
     margin-top: 10%;
 }
 
 #header .row:nth-child(2){
     margin-top: 10%;
-}
+}*/
 
-#FirstBtn {
+/*#FirstBtn {
     margin-top: 20%;
-}
+}*/
 
 #Introducing {
     margin-top: 22%;
@@ -1017,9 +1029,9 @@ figure.effect-zoe figcaption {
 
 @media (max-width: 992px) and (min-height: 1000px) { 
 
-#FirstBtn {
+/*#FirstBtn {
     margin-top: 35%;
-}
+}*/
 
 }
 
@@ -1027,124 +1039,152 @@ figure.effect-zoe figcaption {
 
 @media (min-width: 992px) {
 
-.navbar-nav {
-    margin-top: 2%;
+    .backCarousel {
+        margin-top: 90px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo span {
+        font-size: 40px;
+        line-height: 100px;
+        padding-left: 35px;
+    }
+
+    .logo>span:last-child {
+        font-size: 50px;
+        margin-left: 65px;
+    }
+
+    .top-menu li {
+        line-height: 85px;
+        padding-left: 27px;
+        font-size: 15px;
+    }
+
+    .top-menu {
+        margin-top: 2%;
+
+    }
+    .maint-text-head {
+        font-size: 60px;
+    }
+
+    #FirstBtn {
+        width: 343px;
+        height: 72px;
+        font-size: 27px;
+    }
+
+    /*#header .row:nth-child(1){
+        margin-top: 5%;
+    }
+
+    #header .row:nth-child(2){
+        margin-top: 8%;
+    }
+
+    #header .row:nth-child(3){
+        margin-top: 13%;
+    }
+
+    #header .row:nth-child(4){
+        margin-top: 3%;
+    }*/
+
+    #getTouched {
+        width: 255px;
+        height: 60px;
+        font-size: 27px;
+        border-radius: 10px;
+    }
+
+    #Introducing {
+        margin-top: 20%;
+    }
+
+    #Introducing .row:nth-child(1){
+        font-size: 40px;
+        padding-top: 8%;
+    }
+
+    #Introducing .row:nth-child(2){
+        padding: 5%;
+    }
+
+    #Introducing .row:nth-child(3){
+        padding-bottom: 3%;
+    }
+
+    .topicText {
+        font-size: 43px;
+    }
+
+    .headingLine {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .aboutUsText {
+        padding-top: 3px;
+        font-size: 14px;
+    }
+
+    #recommendation {
+        margin-top: 10%;
+    }
+
+    .comment {
+        padding-left: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .textIntroduc {
+        font-size: 43px;
+    }
+
+    #btmContactUs {
+        width: 235px;
+        height: 60px;
+        margin-bottom: 30%;
+        font-size: 29px;
+    }
+
+    #contactUs .headingLine {
+        display: block;
+    }
+
 }
 
-.backCarousel {
-    margin-top: 90px;
+@media(min-width:2000px) {
+    .maint-text-head {
+        font-size: 90px !important;
+    }
 }
 
-.circle {
-    width: 100px;
-	height: 100px;
+.icon {
+    display: inline;
+}
+@media(max-width:380px) {
+    .icon {
+        display: block;  
+    }
+
+    
 }
 
-.logo span {
-    font-size: 40px;
-    line-height: 100px;
-    padding-left: 35px;
+
+
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+  100% { bottom: 40px; box-shadow: 0 40px 40px rgba(0,0,0,0.1); }
+}
+  
+#btnMenu { 
+ animation: bouncing 0.5s cubic-bezier(0.1,0.20,0.1,1) 0s infinite alternate both; 
 }
 
-.logo>span:last-child {
-    font-size: 50px;
-    margin-left: 65px;
-}
-
-.top-menu li {
-    line-height: 85px;
-    padding-left: 27px;
-    font-size: 15px;
-}
-
-.maint-text-head {
-    font-size: 60px;
-}
-
-#FirstBtn {
-    width: 343px;
-    height: 72px;
-    font-size: 27px;
-}
-
-#header .row:nth-child(1){
-    margin-top: 5%;
-}
-
-#header .row:nth-child(2){
-    margin-top: 8%;
-}
-
-#header .row:nth-child(3){
-    margin-top: 13%;
-}
-
-#header .row:nth-child(4){
-    margin-top: 3%;
-}
-
-#getTouched {
-    width: 255px;
-    height: 60px;
-    font-size: 27px;
-    border-radius: 10px;
-}
-
-#Introducing {
-    margin-top: 20%;
-}
-
-#Introducing .row:nth-child(1){
-    font-size: 40px;
-    padding-top: 8%;
-}
-
-#Introducing .row:nth-child(2){
-    padding: 5%;
-}
-
-#Introducing .row:nth-child(3){
-    padding-bottom: 3%;
-}
-
-.topicText {
-    font-family: 'Bitter', serif;
-    font-size: 43px;
-}
-
-.headingLine {
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.aboutUsText {
-    padding-top: 3px;
-    font-size: 14px;
-}
-
-#recommendation {
-    margin-top: 10%;
-}
-
-.comment {
-    padding-left: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.textIntroduc {
-    font-size: 43px;
-}
-
-#btmContactUs {
-    width: 235px;
-    height: 60px;
-    margin-bottom: 30%;
-    font-size: 29px;
-}
-
-#contactUs .headingLine {
-    display: block;
-}
-
-}
