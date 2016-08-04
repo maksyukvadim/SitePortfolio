@@ -9,13 +9,10 @@ body {
      font-family: 'Open Sans', sans-serif;
 }
 
-
 .blockBtn {
     position: relative;
 }
-#header {
 
-}
 img {
     vertical-align: bottom;
 }
@@ -323,8 +320,10 @@ div.effect-zoe:hover p.description {
     color: #000000;
 }
 
-.active span{
-    color: #ffffff !important;   
+.menu-portfolio .active  {
+    color: #ffffff !important;
+    background: #00bd9b;   
+    
 }
 
 .btn.active.focus, .btn.active:focus, 
@@ -481,9 +480,7 @@ height: auto;
     color: #ffffff;
 }
 
-#aboutUs img {
-    width: 60%;
-}
+
 
 #aboutUs {
     padding-top: 85px;
@@ -505,44 +502,33 @@ height: auto;
     line-height: 1.7em;
 }
 
-.lineFixSm {
-    width: 60%;
-}
 
 #blockPortfolio {
     margin-top: 9%;
 }
 
 .menu-portfolio li {
-    position: relative;
+    text-align: right;
     width: 19%;
+    height: 40px;
     display: inline-block;
-    line-height: 75px;
-    font-size: 15px;
+    line-height: 40px;
+    font-size: 16px;
     color: #484848;
     cursor: pointer;
     z-index: 10;
+    right: 0;
     text-align: center;
+    border-radius: 6px;
+    
 }
 
 .menu-portfolio {
-    padding: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
 }
 
-#activeBlock {
-    position: absolute;
-    width: 18%;
-    background: #00bd9b;
-    margin-top: 17px;  
-    margin-left: 0.9em; 
-    left: 0;
-    top: 0;
-    z-index: 1;
-    padding: 20px;
-    border-radius: 5px;
-}
+
 
 #blockPortfolio .row:nth-child(1){
     padding-bottom: 3%;
@@ -559,8 +545,7 @@ height: auto;
 }
 
 #recommendation {
-    margin-top: 20%;
-    margin-bottom: 5%;
+    margin-top: 10% !important;
 }
 
 .backGreen {
@@ -725,13 +710,17 @@ height: auto;
 
 #ourTeam .headingLine {
    display: block;
+   
 }
 
 /*max-width: 992px*/
 
 @media (max-width: 992px) {  
 
-
+#ourTeam .headingLine {
+   display: block;
+   
+}
 /*#header .row:nth-child(4){
     margin-top: 15%;
 }*/
@@ -773,7 +762,7 @@ height: auto;
 #bs-example-navbar-collapse-1 {
     position: absolute;
     width: 90%;
-    /*background: linear-gradient(to top, #000000, #00bd9b);*/
+    background: #232726;
     right: 0;
     z-index: 10;
 }
@@ -835,20 +824,16 @@ height: auto;
 .aboutUsText {
     padding-right: 0;
 }
+.menu-portfolio {
+    margin-top: 5%;
+    padding-left: 0;
+}
+
 
 .menu-portfolio li {
     font-size: 9px;
 }
 
-.menu-portfolio li:nth-child(5) {
-    width: 18.5%;
-}
-
-#activeBlock {
-    margin-top: 22px;  
-    margin-left: 1.3em; 
-    padding: 15px;
-}
 
 #avatar { 
     margin-top: -40px;
@@ -879,7 +864,7 @@ height: auto;
 }
 
 #services .headingLine {
-    display: none;
+   display: block;
 }
 #services .row {
     margin-top: 10%;
@@ -891,7 +876,6 @@ height: auto;
 }
 
 #contactUs .headingLine {
-    width: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -905,7 +889,7 @@ figure.effect-zoe figcaption {
 }
 
 #aboutUs .headingLine {
-    display: none;
+   display: block;
 }
 
 #bclockContact span {
@@ -1187,4 +1171,3 @@ figure.effect-zoe figcaption {
 #btnMenu { 
  animation: bouncing 0.5s cubic-bezier(0.1,0.20,0.1,1) 0s infinite alternate both; 
 }
-

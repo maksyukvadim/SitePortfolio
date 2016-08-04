@@ -45,35 +45,14 @@ $(document).ready(function () {
     $('ul.menu-portfolio li').click(function () {
         
 
-        setTimeout((function () {
-            $('#recommendation').css({ 'margin-top': '10%' });
-        }), 400);
-
         $('#activeBlock').animate(function () {
             offset({ top: 20, left: 100 });
         });
 
-        moveTo($('#activeBlock'), $(this));
+        
     });
 
-    var blockTargetLeft = $('#activeBlock').offset().left;
-
-    function moveTo(element, target) {
-        var targetOffsetLeft = target.offset().left;
-        var position = 0;
-        var drag = 0;
-        var targetFix = blockTargetLeft;
-        if (targetOffsetLeft > blockTargetLeft) {
-            var position = targetOffsetLeft - targetFix;
-        } else {
-            var position = targetFix - targetOffsetLeft;
-
-        }
-        element.animate({
-            left: position,
-        }, 200);
-
-    }
+    
     if(widthNew < 768) {
 
         $('#bs-example-navbar-collapse-1 a' ).click(function(){
