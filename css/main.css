@@ -398,7 +398,7 @@ div.effect-zoe:hover p.description {
 
 .caption-text {
     font-family: 'Open Sans', serif;
-    font-size: 13px;
+    font-size: 13pt;
     color: #bebebe;
 }
 
@@ -787,26 +787,6 @@ height: auto;
     font-size: 25px;
 }
 
-.caption-text {
-    font-size: 10px;
-}
-
-/*#FirstBtn { 
-    margin-top: 15%;
-}*/
-
-/*#header > .row div:nth-child(3){
-    margin-top: 50%;
-}
-
-#header .row div:nth-child(4){
-    margin-top: 7%;
-}*/
-
-/*#header .row:nth-child(5){
-    margin-top: 15%;
-}*/
-
 #Introducing {
     margin-top: 10em;
 }
@@ -917,73 +897,9 @@ figure.effect-zoe figcaption {
 
 }
 
-@media (max-width: 992px) and (max-height: 700px) {  
 
-
-/*#header .row:nth-child(2){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(3){
-    margin-top: 15%;
-}*/
-/*#FirstBtn {
-    margin-top: 15%;
-}*/
-
-}
-@media (max-width: 767px) and (max-height: 700px) { 
-
-
-/*#header .row:nth-child(2){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(3){
-    margin-top: 5%;
-}*/
-
-/*#FirstBtn {
-    margin-top: 15%;
-}*/
-
-}
-
-@media (min-width: 1440px)  {  
-
-/*#header .row:nth-child(1){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(2){
-    margin-top: 10%;
-}*/
-
-/*#FirstBtn {
-    margin-top: 12%;
-}*/
-
-
-}
 
 @media (min-width: 1440px) and (max-height: 900px) {  
-
-/*#header .row:nth-child(1){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(2){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(3){
-    margin-top: 15%;
-}*/
-
-
-/*#FirstBtn {
-    margin-top: 15%;
-}*/
 
 #Introducing {
     margin-top: 10%;
@@ -993,31 +909,12 @@ figure.effect-zoe figcaption {
 
 @media (min-width: 992px) and (min-height: 1020px) {  
 
-/*#header .row:nth-child(1){
-    margin-top: 10%;
-}
-
-#header .row:nth-child(2){
-    margin-top: 10%;
-}*/
-
-/*#FirstBtn {
-    margin-top: 20%;
-}*/
-
 #Introducing {
     margin-top: 22%;
 }
 
 }
 
-@media (max-width: 992px) and (min-height: 1000px) { 
-
-/*#FirstBtn {
-    margin-top: 35%;
-}*/
-
-}
 
 /*min-width: 992px*/
 
@@ -1157,17 +1054,15 @@ figure.effect-zoe figcaption {
     .icon {
         display: block;  
     }
-
-    
+}
+@media(max-device-height:414px) {
+    .caption-text {
+        font-size: 11px !important; 
+    }
 }
 
-
-
-@keyframes bouncing{
-  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
-  100% { bottom: 40px; box-shadow: 0 40px 40px rgba(0,0,0,0.1); }
-}
-  
-#btnMenu { 
- animation: bouncing 0.5s cubic-bezier(0.1,0.20,0.1,1) 0s infinite alternate both; 
+@media(max-device-height:320px) {
+    .blockBtn {
+    margin-top: 5px !important; 
+    }
 }
